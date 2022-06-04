@@ -43,25 +43,33 @@
 
 // }
 //7//
-function dateObject(){
+// window.onload = () => {
+//     
+//     var myDate = new Date("2022-05-01T11:00+10:00");
+//     if (myDate.getTime() < 12) {
+//         document.body.style.backgroundColor = "yellow";
+//         document.getElementById("para").innerText = 'have a good day';
+
+//     }
+//     else {
+//         document.body.style.backgroundColor = "blue";
+//         document.getElementById("para").innerText = 'have agood afternoon';
+//     }
+// }
+//8//
+window.onload = function () {
+    var userAeg = prompt('add your age please')
+}
+function print(){
     
-    var Date={
-        whatisthetime:prompt("what is the time")
-
-    };
-        if(whatisthetime<12){
-          var color1= document.getElementsByTagName('body');
-          color2.style.bgcolor = "yellow"
-          var paragraph = document.getElementById("para");
-          paragraph.innerText = 'have a good day'
-        }
-        else{
-            var color2 = document.getElementById("para");
-            color2.style.bgcolor = "blue"
-            paragraph.innerText='have agood afternoon'
-            
-
-        }
-      
+    if(userAeg<18){
+        document.getElementsById('para').innerText = 'wellcome';
+        document.body.style.backgroundColor = 'red';
     }
+    else{
+        document.getElementById('para').innerText = 'wellcome';
+        document.body.style.backgroundColor = 'blue'
+    }
+}
+
 
